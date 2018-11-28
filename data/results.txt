@@ -1,0 +1,2819 @@
+############################################################################################################
+############################################## INDEX - B-tree ##############################################
+############################################################################################################
+
+
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.043..0.055 rows=1 loops=1)
+   Recheck Cond: (token = 'b80d5e66-56b8-4ebc-b074-3cac3450ccde'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.027..0.033 rows=1 loops=1)
+         Index Cond: (token = 'b80d5e66-56b8-4ebc-b074-3cac3450ccde'::uuid)
+ Planning Time: 0.297 ms
+ Execution Time: 0.134 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.043..0.055 rows=1 loops=1)
+   Recheck Cond: (token = '8179f503-3b5f-4201-9c5b-d47a7fa4ac50'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.027..0.033 rows=1 loops=1)
+         Index Cond: (token = '8179f503-3b5f-4201-9c5b-d47a7fa4ac50'::uuid)
+ Planning Time: 0.214 ms
+ Execution Time: 0.133 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.044..0.055 rows=1 loops=1)
+   Recheck Cond: (token = '11880aa7-c0e3-4c23-b21b-a0a8c87a0154'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.029..0.034 rows=1 loops=1)
+         Index Cond: (token = '11880aa7-c0e3-4c23-b21b-a0a8c87a0154'::uuid)
+ Planning Time: 0.221 ms
+ Execution Time: 0.132 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.046..0.057 rows=1 loops=1)
+   Recheck Cond: (token = 'dbf4a144-a48a-4168-9e02-387713cee1c6'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.030..0.036 rows=1 loops=1)
+         Index Cond: (token = 'dbf4a144-a48a-4168-9e02-387713cee1c6'::uuid)
+ Planning Time: 0.219 ms
+ Execution Time: 0.137 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.042..0.055 rows=1 loops=1)
+   Recheck Cond: (token = 'a46038e1-8832-45ad-bae9-d0455e22c238'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.027..0.033 rows=1 loops=1)
+         Index Cond: (token = 'a46038e1-8832-45ad-bae9-d0455e22c238'::uuid)
+ Planning Time: 0.220 ms
+ Execution Time: 0.132 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.045..0.057 rows=1 loops=1)
+   Recheck Cond: (token = '6ecccf7e-6cd9-49f1-96d1-6913a976a2aa'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = '6ecccf7e-6cd9-49f1-96d1-6913a976a2aa'::uuid)
+ Planning Time: 0.224 ms
+ Execution Time: 0.134 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.047..0.059 rows=1 loops=1)
+   Recheck Cond: (token = 'fedbe322-f15d-4314-bc90-3442f34cf7ae'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.027..0.033 rows=1 loops=1)
+         Index Cond: (token = 'fedbe322-f15d-4314-bc90-3442f34cf7ae'::uuid)
+ Planning Time: 0.220 ms
+ Execution Time: 0.135 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.049..0.060 rows=1 loops=1)
+   Recheck Cond: (token = 'c7477abf-d504-4859-a877-cd103ea0d820'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.029..0.035 rows=1 loops=1)
+         Index Cond: (token = 'c7477abf-d504-4859-a877-cd103ea0d820'::uuid)
+ Planning Time: 0.225 ms
+ Execution Time: 0.140 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.048..0.060 rows=1 loops=1)
+   Recheck Cond: (token = '57568f62-5b88-417c-8e36-983f87762d23'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.029..0.035 rows=1 loops=1)
+         Index Cond: (token = '57568f62-5b88-417c-8e36-983f87762d23'::uuid)
+ Planning Time: 0.237 ms
+ Execution Time: 0.139 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.054..0.067 rows=1 loops=1)
+   Recheck Cond: (token = '21c22600-3f2f-46c0-ab1e-310dd2ca0d96'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.035..0.041 rows=1 loops=1)
+         Index Cond: (token = '21c22600-3f2f-46c0-ab1e-310dd2ca0d96'::uuid)
+ Planning Time: 0.225 ms
+ Execution Time: 0.145 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.052..0.065 rows=1 loops=1)
+   Recheck Cond: (token = 'ea2ebd9d-23d7-4a05-8705-c9db1d1ded08'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.032..0.038 rows=1 loops=1)
+         Index Cond: (token = 'ea2ebd9d-23d7-4a05-8705-c9db1d1ded08'::uuid)
+ Planning Time: 0.230 ms
+ Execution Time: 0.145 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.046..0.057 rows=1 loops=1)
+   Recheck Cond: (token = 'b49a543a-077e-4e4a-a3ec-62a96871ce7a'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = 'b49a543a-077e-4e4a-a3ec-62a96871ce7a'::uuid)
+ Planning Time: 0.220 ms
+ Execution Time: 0.134 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.047..0.059 rows=1 loops=1)
+   Recheck Cond: (token = '7d07ebd7-eb26-438f-8fd4-fa77b3c5aeec'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.027..0.033 rows=1 loops=1)
+         Index Cond: (token = '7d07ebd7-eb26-438f-8fd4-fa77b3c5aeec'::uuid)
+ Planning Time: 0.226 ms
+ Execution Time: 0.137 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.048..0.060 rows=1 loops=1)
+   Recheck Cond: (token = '0d15ff7b-70a9-4db1-a593-c6a6fc9b03f0'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.029..0.035 rows=1 loops=1)
+         Index Cond: (token = '0d15ff7b-70a9-4db1-a593-c6a6fc9b03f0'::uuid)
+ Planning Time: 0.221 ms
+ Execution Time: 0.142 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.032..0.044 rows=1 loops=1)
+   Recheck Cond: (token = 'd7819618-5451-41f6-917a-5e7447efe362'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.013..0.019 rows=1 loops=1)
+         Index Cond: (token = 'd7819618-5451-41f6-917a-5e7447efe362'::uuid)
+ Planning Time: 0.231 ms
+ Execution Time: 0.122 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.033..0.045 rows=1 loops=1)
+   Recheck Cond: (token = 'a0ee2db5-39f8-453b-bd62-f6439243c4d4'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.014..0.020 rows=1 loops=1)
+         Index Cond: (token = 'a0ee2db5-39f8-453b-bd62-f6439243c4d4'::uuid)
+ Planning Time: 0.221 ms
+ Execution Time: 0.122 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.050..0.062 rows=1 loops=1)
+   Recheck Cond: (token = '6a5ac452-1d9f-4a80-9949-8f11dd97a447'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.030..0.037 rows=1 loops=1)
+         Index Cond: (token = '6a5ac452-1d9f-4a80-9949-8f11dd97a447'::uuid)
+ Planning Time: 0.219 ms
+ Execution Time: 0.142 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.050..0.062 rows=1 loops=1)
+   Recheck Cond: (token = '33c65bef-0147-4ec4-b530-27df28eb85b9'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.030..0.036 rows=1 loops=1)
+         Index Cond: (token = '33c65bef-0147-4ec4-b530-27df28eb85b9'::uuid)
+ Planning Time: 0.222 ms
+ Execution Time: 0.139 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.051..0.063 rows=1 loops=1)
+   Recheck Cond: (token = 'fd32f28c-e5ee-4309-9118-bfad733f652b'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.030..0.036 rows=1 loops=1)
+         Index Cond: (token = 'fd32f28c-e5ee-4309-9118-bfad733f652b'::uuid)
+ Planning Time: 0.221 ms
+ Execution Time: 0.143 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.034..0.046 rows=1 loops=1)
+   Recheck Cond: (token = 'c79e8929-c996-474e-bdff-587bbe93469d'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.015..0.021 rows=1 loops=1)
+         Index Cond: (token = 'c79e8929-c996-474e-bdff-587bbe93469d'::uuid)
+ Planning Time: 0.225 ms
+ Execution Time: 0.123 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.049..0.061 rows=1 loops=1)
+   Recheck Cond: (token = '56ad9ecd-4e19-4171-93be-23aa07689aa1'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.030..0.036 rows=1 loops=1)
+         Index Cond: (token = '56ad9ecd-4e19-4171-93be-23aa07689aa1'::uuid)
+ Planning Time: 0.224 ms
+ Execution Time: 0.138 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.048 rows=1 loops=1)
+   Recheck Cond: (token = '2019356a-32c1-45b5-bfa6-bc7852bc7b13'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = '2019356a-32c1-45b5-bfa6-bc7852bc7b13'::uuid)
+ Planning Time: 0.219 ms
+ Execution Time: 0.124 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.048 rows=1 loops=1)
+   Recheck Cond: (token = 'ea85cb07-1668-4afa-9b8d-54469d105b85'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = 'ea85cb07-1668-4afa-9b8d-54469d105b85'::uuid)
+ Planning Time: 0.212 ms
+ Execution Time: 0.124 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.048 rows=1 loops=1)
+   Recheck Cond: (token = 'b3f162a4-fa10-4e3f-b774-ed15e8643cf7'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = 'b3f162a4-fa10-4e3f-b774-ed15e8643cf7'::uuid)
+ Planning Time: 0.219 ms
+ Execution Time: 0.126 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.039..0.051 rows=1 loops=1)
+   Recheck Cond: (token = '7d5df941-deb7-4284-935c-85e333b81c6a'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.020..0.026 rows=1 loops=1)
+         Index Cond: (token = '7d5df941-deb7-4284-935c-85e333b81c6a'::uuid)
+ Planning Time: 0.219 ms
+ Execution Time: 0.128 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.048..0.060 rows=1 loops=1)
+   Recheck Cond: (token = '46c990de-c25e-47c8-b043-1db17e0cfcdc'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.028..0.033 rows=1 loops=1)
+         Index Cond: (token = '46c990de-c25e-47c8-b043-1db17e0cfcdc'::uuid)
+ Planning Time: 0.222 ms
+ Execution Time: 0.139 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.031..0.043 rows=1 loops=1)
+   Recheck Cond: (token = '1036277c-a706-4b0d-9c2a-b67fc960dd4e'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.013..0.019 rows=1 loops=1)
+         Index Cond: (token = '1036277c-a706-4b0d-9c2a-b67fc960dd4e'::uuid)
+ Planning Time: 0.213 ms
+ Execution Time: 0.120 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.048..0.060 rows=1 loops=1)
+   Recheck Cond: (token = 'a0443c1f-2c89-4530-82ea-81ae12363252'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.028..0.034 rows=1 loops=1)
+         Index Cond: (token = 'a0443c1f-2c89-4530-82ea-81ae12363252'::uuid)
+ Planning Time: 0.328 ms
+ Execution Time: 0.135 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.048 rows=1 loops=1)
+   Recheck Cond: (token = '69b0d3bc-1031-4975-aed1-1a7c5d8a12c4'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = '69b0d3bc-1031-4975-aed1-1a7c5d8a12c4'::uuid)
+ Planning Time: 0.218 ms
+ Execution Time: 0.125 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.041..0.053 rows=1 loops=1)
+   Recheck Cond: (token = '331c6a59-f4d8-4eb9-8ab8-b24aa8def336'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.018..0.023 rows=1 loops=1)
+         Index Cond: (token = '331c6a59-f4d8-4eb9-8ab8-b24aa8def336'::uuid)
+ Planning Time: 0.221 ms
+ Execution Time: 0.129 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.038..0.050 rows=1 loops=1)
+   Recheck Cond: (token = 'fc8901f7-d880-42fe-a6a0-4b19f331d3a8'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.018..0.025 rows=1 loops=1)
+         Index Cond: (token = 'fc8901f7-d880-42fe-a6a0-4b19f331d3a8'::uuid)
+ Planning Time: 0.220 ms
+ Execution Time: 0.127 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.035..0.046 rows=1 loops=1)
+   Recheck Cond: (token = 'c6f59894-bc27-4643-8287-e3e73e85b31b'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.016..0.022 rows=1 loops=1)
+         Index Cond: (token = 'c6f59894-bc27-4643-8287-e3e73e85b31b'::uuid)
+ Planning Time: 0.220 ms
+ Execution Time: 0.121 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.050..0.062 rows=1 loops=1)
+   Recheck Cond: (token = '8f612e31-a0ce-4b88-ae6e-7bb589d9948d'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.030..0.036 rows=1 loops=1)
+         Index Cond: (token = '8f612e31-a0ce-4b88-ae6e-7bb589d9948d'::uuid)
+ Planning Time: 0.225 ms
+ Execution Time: 0.143 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.038..0.050 rows=1 loops=1)
+   Recheck Cond: (token = '59cdc5ce-8476-4fcd-8a56-1483d42d74ff'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.018..0.024 rows=1 loops=1)
+         Index Cond: (token = '59cdc5ce-8476-4fcd-8a56-1483d42d74ff'::uuid)
+ Planning Time: 0.226 ms
+ Execution Time: 0.127 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.048 rows=1 loops=1)
+   Recheck Cond: (token = '23395c6b-681d-4411-a63d-ac521f815571'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = '23395c6b-681d-4411-a63d-ac521f815571'::uuid)
+ Planning Time: 0.217 ms
+ Execution Time: 0.126 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.037..0.048 rows=1 loops=1)
+   Recheck Cond: (token = 'b248710f-eea1-4d34-8cfc-78806857aa75'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.018..0.024 rows=1 loops=1)
+         Index Cond: (token = 'b248710f-eea1-4d34-8cfc-78806857aa75'::uuid)
+ Planning Time: 0.219 ms
+ Execution Time: 0.124 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.040..0.051 rows=1 loops=1)
+   Recheck Cond: (token = '7cb408ac-d248-4279-a8e4-104eb3ab8ae7'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.020..0.026 rows=1 loops=1)
+         Index Cond: (token = '7cb408ac-d248-4279-a8e4-104eb3ab8ae7'::uuid)
+ Planning Time: 0.219 ms
+ Execution Time: 0.127 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.049 rows=1 loops=1)
+   Recheck Cond: (token = '45209f49-b6f0-46be-84cb-a81dfeff6a59'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.016..0.022 rows=1 loops=1)
+         Index Cond: (token = '45209f49-b6f0-46be-84cb-a81dfeff6a59'::uuid)
+ Planning Time: 0.219 ms
+ Execution Time: 0.126 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.034..0.046 rows=1 loops=1)
+   Recheck Cond: (token = '0f8c36e6-9a97-4b02-a0b2-41eb49534bcb'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.013..0.019 rows=1 loops=1)
+         Index Cond: (token = '0f8c36e6-9a97-4b02-a0b2-41eb49534bcb'::uuid)
+ Planning Time: 0.222 ms
+ Execution Time: 0.124 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.032..0.045 rows=1 loops=1)
+   Recheck Cond: (token = 'd9f8cd83-7e3f-4f47-9c9a-d9b994a72b3e'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.013..0.018 rows=1 loops=1)
+         Index Cond: (token = 'd9f8cd83-7e3f-4f47-9c9a-d9b994a72b3e'::uuid)
+ Planning Time: 0.225 ms
+ Execution Time: 0.123 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.032..0.044 rows=1 loops=1)
+   Recheck Cond: (token = 'a2646420-62e6-438c-b881-7287dffa0cb0'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.013..0.018 rows=1 loops=1)
+         Index Cond: (token = 'a2646420-62e6-438c-b881-7287dffa0cb0'::uuid)
+ Planning Time: 0.220 ms
+ Execution Time: 0.122 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.048 rows=1 loops=1)
+   Recheck Cond: (token = '6cd1fbbd-468d-48d1-9568-0a552a4eec22'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.022 rows=1 loops=1)
+         Index Cond: (token = '6cd1fbbd-468d-48d1-9568-0a552a4eec22'::uuid)
+ Planning Time: 0.220 ms
+ Execution Time: 0.125 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.040..0.053 rows=1 loops=1)
+   Recheck Cond: (token = 'fcdf0f61-cb11-42f3-bb28-d68474244126'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = 'fcdf0f61-cb11-42f3-bb28-d68474244126'::uuid)
+ Planning Time: 0.224 ms
+ Execution Time: 0.131 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.048 rows=1 loops=1)
+   Recheck Cond: (token = 'c54ba6fe-afb8-4638-970f-6e52be782198'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.022 rows=1 loops=1)
+         Index Cond: (token = 'c54ba6fe-afb8-4638-970f-6e52be782198'::uuid)
+ Planning Time: 0.223 ms
+ Execution Time: 0.128 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.038..0.049 rows=1 loops=1)
+   Recheck Cond: (token = '8fb83d9b-9460-4a7d-b3f6-062109cc020a'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.019..0.025 rows=1 loops=1)
+         Index Cond: (token = '8fb83d9b-9460-4a7d-b3f6-062109cc020a'::uuid)
+ Planning Time: 0.217 ms
+ Execution Time: 0.129 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.048 rows=1 loops=1)
+   Recheck Cond: (token = '5824d438-7807-4fc2-9fde-9fef5420e27c'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.022 rows=1 loops=1)
+         Index Cond: (token = '5824d438-7807-4fc2-9fde-9fef5420e27c'::uuid)
+ Planning Time: 0.227 ms
+ Execution Time: 0.123 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.048 rows=1 loops=1)
+   Recheck Cond: (token = '22906bd6-5caf-4306-bbc5-37bd9f74c3ee'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = '22906bd6-5caf-4306-bbc5-37bd9f74c3ee'::uuid)
+ Planning Time: 0.218 ms
+ Execution Time: 0.126 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.039..0.051 rows=1 loops=1)
+   Recheck Cond: (token = 'ebfc0273-4056-484b-97ac-d08beac8a361'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.018..0.024 rows=1 loops=1)
+         Index Cond: (token = 'ebfc0273-4056-484b-97ac-d08beac8a361'::uuid)
+ Planning Time: 0.227 ms
+ Execution Time: 0.130 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.032..0.044 rows=1 loops=1)
+   Recheck Cond: (token = 'b5689910-24fd-4c90-b394-6859351c83d3'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.013..0.019 rows=1 loops=1)
+         Index Cond: (token = 'b5689910-24fd-4c90-b394-6859351c83d3'::uuid)
+ Planning Time: 0.216 ms
+ Execution Time: 0.120 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.037..0.049 rows=1 loops=1)
+   Recheck Cond: (token = '4577adb3-a981-46b3-a953-33887ff2d8d6'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = '4577adb3-a981-46b3-a953-33887ff2d8d6'::uuid)
+ Planning Time: 0.224 ms
+ Execution Time: 0.129 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.034..0.046 rows=1 loops=1)
+   Recheck Cond: (token = '0ee34451-8d29-4af7-853a-cc56ca45b949'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.013..0.020 rows=1 loops=1)
+         Index Cond: (token = '0ee34451-8d29-4af7-853a-cc56ca45b949'::uuid)
+ Planning Time: 0.242 ms
+ Execution Time: 0.127 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.034..0.045 rows=1 loops=1)
+   Recheck Cond: (token = 'd84fdbee-71d0-4e3c-a122-6425159999bb'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.014..0.020 rows=1 loops=1)
+         Index Cond: (token = 'd84fdbee-71d0-4e3c-a122-6425159999bb'::uuid)
+ Planning Time: 0.221 ms
+ Execution Time: 0.123 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.033..0.044 rows=1 loops=1)
+   Recheck Cond: (token = 'a1bb728b-5577-4381-8d09-fdf360ed792d'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.013..0.018 rows=1 loops=1)
+         Index Cond: (token = 'a1bb728b-5577-4381-8d09-fdf360ed792d'::uuid)
+ Planning Time: 0.221 ms
+ Execution Time: 0.123 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.048 rows=1 loops=1)
+   Recheck Cond: (token = '6b270928-391f-47c6-a9f0-95c1ab415a9f'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = '6b270928-391f-47c6-a9f0-95c1ab415a9f'::uuid)
+ Planning Time: 0.217 ms
+ Execution Time: 0.123 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.049..0.060 rows=1 loops=1)
+   Recheck Cond: (token = '3593a0c5-1dc6-4c0a-85d8-2d8ff6953a12'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.029..0.035 rows=1 loops=1)
+         Index Cond: (token = '3593a0c5-1dc6-4c0a-85d8-2d8ff6953a12'::uuid)
+ Planning Time: 0.217 ms
+ Execution Time: 0.138 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.035..0.047 rows=1 loops=1)
+   Recheck Cond: (token = 'fe003762-026e-404f-a1bf-c65d41e91b84'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.016..0.022 rows=1 loops=1)
+         Index Cond: (token = 'fe003762-026e-404f-a1bf-c65d41e91b84'::uuid)
+ Planning Time: 0.229 ms
+ Execution Time: 0.124 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.041..0.053 rows=1 loops=1)
+   Recheck Cond: (token = '8e0e4c06-87f1-4a72-887e-918c8abf7087'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.021..0.027 rows=1 loops=1)
+         Index Cond: (token = '8e0e4c06-87f1-4a72-887e-918c8abf7087'::uuid)
+ Planning Time: 0.228 ms
+ Execution Time: 0.136 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.037..0.049 rows=1 loops=1)
+   Recheck Cond: (token = '577ae3a3-6b99-4eb7-a466-2a5ad51350fa'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = '577ae3a3-6b99-4eb7-a466-2a5ad51350fa'::uuid)
+ Planning Time: 0.221 ms
+ Execution Time: 0.127 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.037..0.050 rows=1 loops=1)
+   Recheck Cond: (token = '21e77940-4f40-43fb-804d-c2282067306c'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = '21e77940-4f40-43fb-804d-c2282067306c'::uuid)
+ Planning Time: 0.223 ms
+ Execution Time: 0.134 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.035..0.047 rows=1 loops=1)
+   Recheck Cond: (token = 'eb5310dd-33e7-4740-ac34-5bf76bbb11de'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.016..0.022 rows=1 loops=1)
+         Index Cond: (token = 'eb5310dd-33e7-4740-ac34-5bf76bbb11de'::uuid)
+ Planning Time: 0.220 ms
+ Execution Time: 0.126 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.034..0.046 rows=1 loops=1)
+   Recheck Cond: (token = 'b4bfa77a-178f-4b85-881c-f3c5b60ef150'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.015..0.021 rows=1 loops=1)
+         Index Cond: (token = 'b4bfa77a-178f-4b85-881c-f3c5b60ef150'::uuid)
+ Planning Time: 0.216 ms
+ Execution Time: 0.123 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.040..0.052 rows=1 loops=1)
+   Recheck Cond: (token = '7e2b3e17-fb36-40ca-a403-8b930162d2c2'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.021..0.026 rows=1 loops=1)
+         Index Cond: (token = '7e2b3e17-fb36-40ca-a403-8b930162d2c2'::uuid)
+ Planning Time: 0.215 ms
+ Execution Time: 0.130 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.038..0.051 rows=1 loops=1)
+   Recheck Cond: (token = '4797d5b5-dfde-440e-80ea-24614cb6b235'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.019..0.025 rows=1 loops=1)
+         Index Cond: (token = '4797d5b5-dfde-440e-80ea-24614cb6b235'::uuid)
+ Planning Time: 0.228 ms
+ Execution Time: 0.131 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.034..0.046 rows=1 loops=1)
+   Recheck Cond: (token = '11036c52-c385-4953-acd2-bc30970a92a7'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.014..0.020 rows=1 loops=1)
+         Index Cond: (token = '11036c52-c385-4953-acd2-bc30970a92a7'::uuid)
+ Planning Time: 0.220 ms
+ Execution Time: 0.123 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.034..0.045 rows=1 loops=1)
+   Recheck Cond: (token = 'a11281f5-4909-4276-9291-885ee0e0e7aa'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.013..0.019 rows=1 loops=1)
+         Index Cond: (token = 'a11281f5-4909-4276-9291-885ee0e0e7aa'::uuid)
+ Planning Time: 0.219 ms
+ Execution Time: 0.121 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.038..0.050 rows=1 loops=1)
+   Recheck Cond: (token = '6a7e1892-2db0-47bb-be78-202c2b34c81d'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.018..0.024 rows=1 loops=1)
+         Index Cond: (token = '6a7e1892-2db0-47bb-be78-202c2b34c81d'::uuid)
+ Planning Time: 0.372 ms
+ Execution Time: 0.169 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.037..0.050 rows=1 loops=1)
+   Recheck Cond: (token = '34eaaf30-1158-4bff-9a60-b8fb7688a88f'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = '34eaaf30-1158-4bff-9a60-b8fb7688a88f'::uuid)
+ Planning Time: 0.222 ms
+ Execution Time: 0.131 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.047 rows=1 loops=1)
+   Recheck Cond: (token = 'fd5646cd-f5ff-4044-b647-51c9c1dc8901'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.016..0.022 rows=1 loops=1)
+         Index Cond: (token = 'fd5646cd-f5ff-4044-b647-51c9c1dc8901'::uuid)
+ Planning Time: 0.216 ms
+ Execution Time: 0.123 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.049 rows=1 loops=1)
+   Recheck Cond: (token = 'c7c2dc6a-d9a6-4489-922e-e9970c306973'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = 'c7c2dc6a-d9a6-4489-922e-e9970c306973'::uuid)
+ Planning Time: 0.223 ms
+ Execution Time: 0.128 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.038..0.050 rows=1 loops=1)
+   Recheck Cond: (token = '902f7307-bd4e-48ce-be16-8265578449e6'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.019..0.025 rows=1 loops=1)
+         Index Cond: (token = '902f7307-bd4e-48ce-be16-8265578449e6'::uuid)
+ Planning Time: 0.218 ms
+ Execution Time: 0.129 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.048 rows=1 loops=1)
+   Recheck Cond: (token = '5a9b0aa4-a1f5-4d13-9afd-1a33a2d72a58'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = '5a9b0aa4-a1f5-4d13-9afd-1a33a2d72a58'::uuid)
+ Planning Time: 0.217 ms
+ Execution Time: 0.126 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.035..0.047 rows=1 loops=1)
+   Recheck Cond: (token = 'eaa91f48-2679-4735-b0bc-e662ebad7f5b'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.016..0.022 rows=1 loops=1)
+         Index Cond: (token = 'eaa91f48-2679-4735-b0bc-e662ebad7f5b'::uuid)
+ Planning Time: 0.222 ms
+ Execution Time: 0.125 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.049 rows=1 loops=1)
+   Recheck Cond: (token = 'b316b6e5-0a20-4b7a-ada3-7e3036015fcd'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = 'b316b6e5-0a20-4b7a-ada3-7e3036015fcd'::uuid)
+ Planning Time: 0.237 ms
+ Execution Time: 0.128 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.040..0.052 rows=1 loops=1)
+   Recheck Cond: (token = '7d824d82-efc8-4fbf-898b-16ff81554040'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.020..0.026 rows=1 loops=1)
+         Index Cond: (token = '7d824d82-efc8-4fbf-898b-16ff81554040'::uuid)
+ Planning Time: 0.226 ms
+ Execution Time: 0.131 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.048 rows=1 loops=1)
+   Recheck Cond: (token = '47eee41f-d36f-4404-a572-afcdcca920b2'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = '47eee41f-d36f-4404-a572-afcdcca920b2'::uuid)
+ Planning Time: 0.228 ms
+ Execution Time: 0.127 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.048 rows=1 loops=1)
+   Recheck Cond: (token = '105a7bbc-b717-4848-8159-479b17fd0024'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.014..0.019 rows=1 loops=1)
+         Index Cond: (token = '105a7bbc-b717-4848-8159-479b17fd0024'::uuid)
+ Planning Time: 0.221 ms
+ Execution Time: 0.124 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.069..0.105 rows=1 loops=1)
+   Recheck Cond: (token = 'dac61259-9bbe-4d8d-ad41-e0696251e196'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.036..0.041 rows=1 loops=1)
+         Index Cond: (token = 'dac61259-9bbe-4d8d-ad41-e0696251e196'::uuid)
+ Planning Time: 0.227 ms
+ Execution Time: 0.215 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.032..0.044 rows=1 loops=1)
+   Recheck Cond: (token = 'a332a8f6-7f65-41d2-8928-7837ada5c109'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.012..0.018 rows=1 loops=1)
+         Index Cond: (token = 'a332a8f6-7f65-41d2-8928-7837ada5c109'::uuid)
+ Planning Time: 0.221 ms
+ Execution Time: 0.121 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.048 rows=1 loops=1)
+   Recheck Cond: (token = '3341bd9a-04e9-4bf4-afe7-4466f67b160c'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = '3341bd9a-04e9-4bf4-afe7-4466f67b160c'::uuid)
+ Planning Time: 0.220 ms
+ Execution Time: 0.123 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.037..0.049 rows=1 loops=1)
+   Recheck Cond: (token = 'fdad5437-e890-4f39-8bcf-dc3441cff77e'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.018..0.024 rows=1 loops=1)
+         Index Cond: (token = 'fdad5437-e890-4f39-8bcf-dc3441cff77e'::uuid)
+ Planning Time: 0.228 ms
+ Execution Time: 0.131 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.048 rows=1 loops=1)
+   Recheck Cond: (token = 'c619ebd4-cc38-437e-a7b6-74038c22d7f1'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.018..0.024 rows=1 loops=1)
+         Index Cond: (token = 'c619ebd4-cc38-437e-a7b6-74038c22d7f1'::uuid)
+ Planning Time: 0.212 ms
+ Execution Time: 0.125 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.037..0.049 rows=1 loops=1)
+   Recheck Cond: (token = '90858271-b0df-48c3-839d-0dd1d776b763'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.018..0.024 rows=1 loops=1)
+         Index Cond: (token = '90858271-b0df-48c3-839d-0dd1d776b763'::uuid)
+ Planning Time: 0.219 ms
+ Execution Time: 0.129 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.035..0.046 rows=1 loops=1)
+   Recheck Cond: (token = '59f1190f-9487-4c08-af85-a59f22ca98d5'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = '59f1190f-9487-4c08-af85-a59f22ca98d5'::uuid)
+ Planning Time: 0.211 ms
+ Execution Time: 0.121 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.035..0.046 rows=1 loops=1)
+   Recheck Cond: (token = '235eb0ac-782e-414c-8b6c-3d6d6d1e7847'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.016..0.021 rows=1 loops=1)
+         Index Cond: (token = '235eb0ac-782e-414c-8b6c-3d6d6d1e7847'::uuid)
+ Planning Time: 0.211 ms
+ Execution Time: 0.122 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.048 rows=1 loops=1)
+   Recheck Cond: (token = 'ecca4749-5dd5-4591-a753-d63bb87259ba'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = 'ecca4749-5dd5-4591-a753-d63bb87259ba'::uuid)
+ Planning Time: 0.216 ms
+ Execution Time: 0.129 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.032..0.045 rows=1 loops=1)
+   Recheck Cond: (token = 'b636dee6-417d-49d6-833b-6e0a03c6392c'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.013..0.019 rows=1 loops=1)
+         Index Cond: (token = 'b636dee6-417d-49d6-833b-6e0a03c6392c'::uuid)
+ Planning Time: 0.222 ms
+ Execution Time: 0.124 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.037..0.048 rows=1 loops=1)
+   Recheck Cond: (token = '4644f28a-c601-43f9-b9fa-3a384c9c8e2f'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.024 rows=1 loops=1)
+         Index Cond: (token = '4644f28a-c601-43f9-b9fa-3a384c9c8e2f'::uuid)
+ Planning Time: 0.218 ms
+ Execution Time: 0.128 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.032..0.043 rows=1 loops=1)
+   Recheck Cond: (token = '0fb18927-aaa8-483d-95e1-d20697f06ea1'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.013..0.018 rows=1 loops=1)
+         Index Cond: (token = '0fb18927-aaa8-483d-95e1-d20697f06ea1'::uuid)
+ Planning Time: 0.223 ms
+ Execution Time: 0.120 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.031..0.043 rows=1 loops=1)
+   Recheck Cond: (token = 'd91d20c4-8e4f-4c82-b2c9-6bd5e2444f14'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.013..0.018 rows=1 loops=1)
+         Index Cond: (token = 'd91d20c4-8e4f-4c82-b2c9-6bd5e2444f14'::uuid)
+ Planning Time: 0.223 ms
+ Execution Time: 0.120 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.032..0.044 rows=1 loops=1)
+   Recheck Cond: (token = 'a289b761-72f7-40c7-9eb0-03a32d982f86'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.013..0.019 rows=1 loops=1)
+         Index Cond: (token = 'a289b761-72f7-40c7-9eb0-03a32d982f86'::uuid)
+ Planning Time: 0.227 ms
+ Execution Time: 0.123 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.048 rows=1 loops=1)
+   Recheck Cond: (token = '6cf54efe-569e-450c-ba97-9b7178eb0ff8'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = '6cf54efe-569e-450c-ba97-9b7178eb0ff8'::uuid)
+ Planning Time: 0.222 ms
+ Execution Time: 0.128 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.035..0.047 rows=1 loops=1)
+   Recheck Cond: (token = '3661e59b-3a46-4950-967f-343fc33ff06a'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.016..0.022 rows=1 loops=1)
+         Index Cond: (token = '3661e59b-3a46-4950-967f-343fc33ff06a'::uuid)
+ Planning Time: 0.222 ms
+ Execution Time: 0.126 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.049 rows=1 loops=1)
+   Recheck Cond: (token = 'ffcd7c38-1eed-4e95-b266-cc0e0e93d0dd'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.024 rows=1 loops=1)
+         Index Cond: (token = 'ffcd7c38-1eed-4e95-b266-cc0e0e93d0dd'::uuid)
+ Planning Time: 0.225 ms
+ Execution Time: 0.129 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.037..0.048 rows=1 loops=1)
+   Recheck Cond: (token = '8fdc91dc-a471-47b8-9825-983c576925e0'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.018..0.024 rows=1 loops=1)
+         Index Cond: (token = '8fdc91dc-a471-47b8-9825-983c576925e0'::uuid)
+ Planning Time: 0.218 ms
+ Execution Time: 0.126 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.033..0.045 rows=1 loops=1)
+   Recheck Cond: (token = '59482779-8818-4cfd-b40d-300aa2bd0652'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.015..0.021 rows=1 loops=1)
+         Index Cond: (token = '59482779-8818-4cfd-b40d-300aa2bd0652'::uuid)
+ Planning Time: 0.214 ms
+ Execution Time: 0.165 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.038..0.049 rows=1 loops=1)
+   Recheck Cond: (token = '22b4be16-6cbf-4041-90f4-c9d9ed11e6c5'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.018..0.023 rows=1 loops=1)
+         Index Cond: (token = '22b4be16-6cbf-4041-90f4-c9d9ed11e6c5'::uuid)
+ Planning Time: 0.223 ms
+ Execution Time: 0.127 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.034..0.047 rows=1 loops=1)
+   Recheck Cond: (token = '5893c5e1-b96d-4a97-a2c3-c74a2cf3f630'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.016..0.022 rows=1 loops=1)
+         Index Cond: (token = '5893c5e1-b96d-4a97-a2c3-c74a2cf3f630'::uuid)
+ Planning Time: 0.216 ms
+ Execution Time: 0.124 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.048 rows=1 loops=1)
+   Recheck Cond: (token = '21ff5c7e-9d15-4edc-8fab-60187747d6a2'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.018..0.024 rows=1 loops=1)
+         Index Cond: (token = '21ff5c7e-9d15-4edc-8fab-60187747d6a2'::uuid)
+ Planning Time: 0.224 ms
+ Execution Time: 0.125 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.036..0.048 rows=1 loops=1)
+   Recheck Cond: (token = 'eb6bf31b-81bc-4321-ab92-f8e6c29bb714'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.017..0.023 rows=1 loops=1)
+         Index Cond: (token = 'eb6bf31b-81bc-4321-ab92-f8e6c29bb714'::uuid)
+ Planning Time: 0.215 ms
+ Execution Time: 0.127 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.67..87.02 rows=50 width=44) (actual time=0.032..0.044 rows=1 loops=1)
+   Recheck Cond: (token = 'b4d78ab8-6563-4766-8779-90b50def9786'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on btree_tokenx  (cost=0.00..4.66 rows=50 width=0) (actual time=0.014..0.020 rows=1 loops=1)
+         Index Cond: (token = 'b4d78ab8-6563-4766-8779-90b50def9786'::uuid)
+ Planning Time: 0.219 ms
+ Execution Time: 0.121 ms
+(7 rows)
+
+
+############################################################################################################
+##############################################  INDEX - GiST  ##############################################
+############################################################################################################
+
+
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.070..0.083 rows=1 loops=1)
+   Recheck Cond: (token = 'b80d5e66-56b8-4ebc-b074-3cac3450ccde'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.044..0.050 rows=1 loops=1)
+         Index Cond: (token = 'b80d5e66-56b8-4ebc-b074-3cac3450ccde'::uuid)
+ Planning Time: 0.387 ms
+ Execution Time: 0.915 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.045..0.058 rows=1 loops=1)
+   Recheck Cond: (token = '8179f503-3b5f-4201-9c5b-d47a7fa4ac50'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.024..0.030 rows=1 loops=1)
+         Index Cond: (token = '8179f503-3b5f-4201-9c5b-d47a7fa4ac50'::uuid)
+ Planning Time: 0.247 ms
+ Execution Time: 0.546 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.049..0.061 rows=1 loops=1)
+   Recheck Cond: (token = '11880aa7-c0e3-4c23-b21b-a0a8c87a0154'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.029..0.035 rows=1 loops=1)
+         Index Cond: (token = '11880aa7-c0e3-4c23-b21b-a0a8c87a0154'::uuid)
+ Planning Time: 0.240 ms
+ Execution Time: 0.537 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.048..0.060 rows=1 loops=1)
+   Recheck Cond: (token = 'dbf4a144-a48a-4168-9e02-387713cee1c6'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.027..0.033 rows=1 loops=1)
+         Index Cond: (token = 'dbf4a144-a48a-4168-9e02-387713cee1c6'::uuid)
+ Planning Time: 0.241 ms
+ Execution Time: 0.536 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.046..0.058 rows=1 loops=1)
+   Recheck Cond: (token = 'a46038e1-8832-45ad-bae9-d0455e22c238'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = 'a46038e1-8832-45ad-bae9-d0455e22c238'::uuid)
+ Planning Time: 0.241 ms
+ Execution Time: 0.540 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.049..0.061 rows=1 loops=1)
+   Recheck Cond: (token = '6ecccf7e-6cd9-49f1-96d1-6913a976a2aa'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.027..0.033 rows=1 loops=1)
+         Index Cond: (token = '6ecccf7e-6cd9-49f1-96d1-6913a976a2aa'::uuid)
+ Planning Time: 0.241 ms
+ Execution Time: 0.537 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.047..0.059 rows=1 loops=1)
+   Recheck Cond: (token = 'fedbe322-f15d-4314-bc90-3442f34cf7ae'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.028..0.034 rows=1 loops=1)
+         Index Cond: (token = 'fedbe322-f15d-4314-bc90-3442f34cf7ae'::uuid)
+ Planning Time: 0.244 ms
+ Execution Time: 0.538 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.052..0.064 rows=1 loops=1)
+   Recheck Cond: (token = 'c7477abf-d504-4859-a877-cd103ea0d820'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.027..0.034 rows=1 loops=1)
+         Index Cond: (token = 'c7477abf-d504-4859-a877-cd103ea0d820'::uuid)
+ Planning Time: 0.240 ms
+ Execution Time: 0.549 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.045..0.058 rows=1 loops=1)
+   Recheck Cond: (token = '57568f62-5b88-417c-8e36-983f87762d23'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = '57568f62-5b88-417c-8e36-983f87762d23'::uuid)
+ Planning Time: 0.244 ms
+ Execution Time: 0.535 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.048..0.061 rows=1 loops=1)
+   Recheck Cond: (token = '21c22600-3f2f-46c0-ab1e-310dd2ca0d96'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = '21c22600-3f2f-46c0-ab1e-310dd2ca0d96'::uuid)
+ Planning Time: 0.258 ms
+ Execution Time: 0.551 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.046..0.058 rows=1 loops=1)
+   Recheck Cond: (token = 'ea2ebd9d-23d7-4a05-8705-c9db1d1ded08'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = 'ea2ebd9d-23d7-4a05-8705-c9db1d1ded08'::uuid)
+ Planning Time: 0.240 ms
+ Execution Time: 0.533 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.049..0.061 rows=1 loops=1)
+   Recheck Cond: (token = 'b49a543a-077e-4e4a-a3ec-62a96871ce7a'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.028..0.034 rows=1 loops=1)
+         Index Cond: (token = 'b49a543a-077e-4e4a-a3ec-62a96871ce7a'::uuid)
+ Planning Time: 0.242 ms
+ Execution Time: 0.534 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.040..0.052 rows=1 loops=1)
+   Recheck Cond: (token = '7d07ebd7-eb26-438f-8fd4-fa77b3c5aeec'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.025..0.031 rows=1 loops=1)
+         Index Cond: (token = '7d07ebd7-eb26-438f-8fd4-fa77b3c5aeec'::uuid)
+ Planning Time: 0.243 ms
+ Execution Time: 0.538 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.060..0.072 rows=1 loops=1)
+   Recheck Cond: (token = '0d15ff7b-70a9-4db1-a593-c6a6fc9b03f0'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.029..0.035 rows=1 loops=1)
+         Index Cond: (token = '0d15ff7b-70a9-4db1-a593-c6a6fc9b03f0'::uuid)
+ Planning Time: 0.248 ms
+ Execution Time: 0.567 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.042..0.054 rows=1 loops=1)
+   Recheck Cond: (token = 'd7819618-5451-41f6-917a-5e7447efe362'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.027..0.033 rows=1 loops=1)
+         Index Cond: (token = 'd7819618-5451-41f6-917a-5e7447efe362'::uuid)
+ Planning Time: 0.238 ms
+ Execution Time: 0.527 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.043..0.055 rows=1 loops=1)
+   Recheck Cond: (token = 'a0ee2db5-39f8-453b-bd62-f6439243c4d4'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = 'a0ee2db5-39f8-453b-bd62-f6439243c4d4'::uuid)
+ Planning Time: 0.244 ms
+ Execution Time: 0.527 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.038..0.050 rows=1 loops=1)
+   Recheck Cond: (token = '6a5ac452-1d9f-4a80-9949-8f11dd97a447'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.023..0.029 rows=1 loops=1)
+         Index Cond: (token = '6a5ac452-1d9f-4a80-9949-8f11dd97a447'::uuid)
+ Planning Time: 0.237 ms
+ Execution Time: 0.517 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.042..0.054 rows=1 loops=1)
+   Recheck Cond: (token = '33c65bef-0147-4ec4-b530-27df28eb85b9'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.024..0.030 rows=1 loops=1)
+         Index Cond: (token = '33c65bef-0147-4ec4-b530-27df28eb85b9'::uuid)
+ Planning Time: 0.239 ms
+ Execution Time: 0.544 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.045..0.057 rows=1 loops=1)
+   Recheck Cond: (token = 'fd32f28c-e5ee-4309-9118-bfad733f652b'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.029..0.036 rows=1 loops=1)
+         Index Cond: (token = 'fd32f28c-e5ee-4309-9118-bfad733f652b'::uuid)
+ Planning Time: 0.237 ms
+ Execution Time: 0.528 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.046..0.058 rows=1 loops=1)
+   Recheck Cond: (token = 'c79e8929-c996-474e-bdff-587bbe93469d'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.028..0.034 rows=1 loops=1)
+         Index Cond: (token = 'c79e8929-c996-474e-bdff-587bbe93469d'::uuid)
+ Planning Time: 0.250 ms
+ Execution Time: 0.567 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.044..0.056 rows=1 loops=1)
+   Recheck Cond: (token = '56ad9ecd-4e19-4171-93be-23aa07689aa1'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.025..0.031 rows=1 loops=1)
+         Index Cond: (token = '56ad9ecd-4e19-4171-93be-23aa07689aa1'::uuid)
+ Planning Time: 0.258 ms
+ Execution Time: 0.530 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.046..0.058 rows=1 loops=1)
+   Recheck Cond: (token = '2019356a-32c1-45b5-bfa6-bc7852bc7b13'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.025..0.032 rows=1 loops=1)
+         Index Cond: (token = '2019356a-32c1-45b5-bfa6-bc7852bc7b13'::uuid)
+ Planning Time: 0.241 ms
+ Execution Time: 0.538 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.048..0.060 rows=1 loops=1)
+   Recheck Cond: (token = 'ea85cb07-1668-4afa-9b8d-54469d105b85'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.029..0.035 rows=1 loops=1)
+         Index Cond: (token = 'ea85cb07-1668-4afa-9b8d-54469d105b85'::uuid)
+ Planning Time: 0.263 ms
+ Execution Time: 0.538 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.047..0.059 rows=1 loops=1)
+   Recheck Cond: (token = 'b3f162a4-fa10-4e3f-b774-ed15e8643cf7'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = 'b3f162a4-fa10-4e3f-b774-ed15e8643cf7'::uuid)
+ Planning Time: 0.232 ms
+ Execution Time: 0.539 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.042..0.054 rows=1 loops=1)
+   Recheck Cond: (token = '7d5df941-deb7-4284-935c-85e333b81c6a'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.023..0.028 rows=1 loops=1)
+         Index Cond: (token = '7d5df941-deb7-4284-935c-85e333b81c6a'::uuid)
+ Planning Time: 0.237 ms
+ Execution Time: 0.526 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.048..0.060 rows=1 loops=1)
+   Recheck Cond: (token = '46c990de-c25e-47c8-b043-1db17e0cfcdc'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.027..0.033 rows=1 loops=1)
+         Index Cond: (token = '46c990de-c25e-47c8-b043-1db17e0cfcdc'::uuid)
+ Planning Time: 0.232 ms
+ Execution Time: 0.535 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.048..0.060 rows=1 loops=1)
+   Recheck Cond: (token = '1036277c-a706-4b0d-9c2a-b67fc960dd4e'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.029..0.034 rows=1 loops=1)
+         Index Cond: (token = '1036277c-a706-4b0d-9c2a-b67fc960dd4e'::uuid)
+ Planning Time: 0.238 ms
+ Execution Time: 0.535 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.046..0.058 rows=1 loops=1)
+   Recheck Cond: (token = 'a0443c1f-2c89-4530-82ea-81ae12363252'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.031 rows=1 loops=1)
+         Index Cond: (token = 'a0443c1f-2c89-4530-82ea-81ae12363252'::uuid)
+ Planning Time: 0.231 ms
+ Execution Time: 0.520 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.043..0.056 rows=1 loops=1)
+   Recheck Cond: (token = '69b0d3bc-1031-4975-aed1-1a7c5d8a12c4'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.024..0.030 rows=1 loops=1)
+         Index Cond: (token = '69b0d3bc-1031-4975-aed1-1a7c5d8a12c4'::uuid)
+ Planning Time: 0.242 ms
+ Execution Time: 0.533 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.045..0.057 rows=1 loops=1)
+   Recheck Cond: (token = '331c6a59-f4d8-4eb9-8ab8-b24aa8def336'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.025..0.031 rows=1 loops=1)
+         Index Cond: (token = '331c6a59-f4d8-4eb9-8ab8-b24aa8def336'::uuid)
+ Planning Time: 0.236 ms
+ Execution Time: 0.528 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.046..0.058 rows=1 loops=1)
+   Recheck Cond: (token = 'fc8901f7-d880-42fe-a6a0-4b19f331d3a8'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.027..0.033 rows=1 loops=1)
+         Index Cond: (token = 'fc8901f7-d880-42fe-a6a0-4b19f331d3a8'::uuid)
+ Planning Time: 0.239 ms
+ Execution Time: 0.538 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.047..0.058 rows=1 loops=1)
+   Recheck Cond: (token = 'c6f59894-bc27-4643-8287-e3e73e85b31b'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.027..0.033 rows=1 loops=1)
+         Index Cond: (token = 'c6f59894-bc27-4643-8287-e3e73e85b31b'::uuid)
+ Planning Time: 0.237 ms
+ Execution Time: 0.526 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.047..0.059 rows=1 loops=1)
+   Recheck Cond: (token = '8f612e31-a0ce-4b88-ae6e-7bb589d9948d'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.029..0.034 rows=1 loops=1)
+         Index Cond: (token = '8f612e31-a0ce-4b88-ae6e-7bb589d9948d'::uuid)
+ Planning Time: 0.240 ms
+ Execution Time: 0.528 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.048..0.060 rows=1 loops=1)
+   Recheck Cond: (token = '59cdc5ce-8476-4fcd-8a56-1483d42d74ff'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.028..0.033 rows=1 loops=1)
+         Index Cond: (token = '59cdc5ce-8476-4fcd-8a56-1483d42d74ff'::uuid)
+ Planning Time: 0.240 ms
+ Execution Time: 0.530 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.044..0.056 rows=1 loops=1)
+   Recheck Cond: (token = '23395c6b-681d-4411-a63d-ac521f815571'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.024..0.030 rows=1 loops=1)
+         Index Cond: (token = '23395c6b-681d-4411-a63d-ac521f815571'::uuid)
+ Planning Time: 0.240 ms
+ Execution Time: 0.533 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.049..0.061 rows=1 loops=1)
+   Recheck Cond: (token = 'b248710f-eea1-4d34-8cfc-78806857aa75'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.028..0.034 rows=1 loops=1)
+         Index Cond: (token = 'b248710f-eea1-4d34-8cfc-78806857aa75'::uuid)
+ Planning Time: 0.238 ms
+ Execution Time: 0.545 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.044..0.056 rows=1 loops=1)
+   Recheck Cond: (token = '7cb408ac-d248-4279-a8e4-104eb3ab8ae7'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.025..0.030 rows=1 loops=1)
+         Index Cond: (token = '7cb408ac-d248-4279-a8e4-104eb3ab8ae7'::uuid)
+ Planning Time: 0.246 ms
+ Execution Time: 0.542 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.047..0.060 rows=1 loops=1)
+   Recheck Cond: (token = '45209f49-b6f0-46be-84cb-a81dfeff6a59'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = '45209f49-b6f0-46be-84cb-a81dfeff6a59'::uuid)
+ Planning Time: 0.237 ms
+ Execution Time: 0.541 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.048..0.061 rows=1 loops=1)
+   Recheck Cond: (token = '0f8c36e6-9a97-4b02-a0b2-41eb49534bcb'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.029..0.035 rows=1 loops=1)
+         Index Cond: (token = '0f8c36e6-9a97-4b02-a0b2-41eb49534bcb'::uuid)
+ Planning Time: 0.237 ms
+ Execution Time: 0.534 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.047..0.058 rows=1 loops=1)
+   Recheck Cond: (token = 'd9f8cd83-7e3f-4f47-9c9a-d9b994a72b3e'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = 'd9f8cd83-7e3f-4f47-9c9a-d9b994a72b3e'::uuid)
+ Planning Time: 0.234 ms
+ Execution Time: 0.523 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.043..0.055 rows=1 loops=1)
+   Recheck Cond: (token = 'a2646420-62e6-438c-b881-7287dffa0cb0'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.025..0.031 rows=1 loops=1)
+         Index Cond: (token = 'a2646420-62e6-438c-b881-7287dffa0cb0'::uuid)
+ Planning Time: 0.238 ms
+ Execution Time: 0.525 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.048..0.059 rows=1 loops=1)
+   Recheck Cond: (token = '6cd1fbbd-468d-48d1-9568-0a552a4eec22'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.027..0.033 rows=1 loops=1)
+         Index Cond: (token = '6cd1fbbd-468d-48d1-9568-0a552a4eec22'::uuid)
+ Planning Time: 0.234 ms
+ Execution Time: 0.528 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.050..0.062 rows=1 loops=1)
+   Recheck Cond: (token = 'fcdf0f61-cb11-42f3-bb28-d68474244126'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.032..0.037 rows=1 loops=1)
+         Index Cond: (token = 'fcdf0f61-cb11-42f3-bb28-d68474244126'::uuid)
+ Planning Time: 0.238 ms
+ Execution Time: 0.530 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.051..0.063 rows=1 loops=1)
+   Recheck Cond: (token = 'c54ba6fe-afb8-4638-970f-6e52be782198'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.027..0.033 rows=1 loops=1)
+         Index Cond: (token = 'c54ba6fe-afb8-4638-970f-6e52be782198'::uuid)
+ Planning Time: 0.236 ms
+ Execution Time: 0.534 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.045..0.057 rows=1 loops=1)
+   Recheck Cond: (token = '8fb83d9b-9460-4a7d-b3f6-062109cc020a'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = '8fb83d9b-9460-4a7d-b3f6-062109cc020a'::uuid)
+ Planning Time: 0.238 ms
+ Execution Time: 0.530 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.047..0.059 rows=1 loops=1)
+   Recheck Cond: (token = '5824d438-7807-4fc2-9fde-9fef5420e27c'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = '5824d438-7807-4fc2-9fde-9fef5420e27c'::uuid)
+ Planning Time: 0.240 ms
+ Execution Time: 0.547 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.044..0.056 rows=1 loops=1)
+   Recheck Cond: (token = '22906bd6-5caf-4306-bbc5-37bd9f74c3ee'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.024..0.030 rows=1 loops=1)
+         Index Cond: (token = '22906bd6-5caf-4306-bbc5-37bd9f74c3ee'::uuid)
+ Planning Time: 0.235 ms
+ Execution Time: 0.565 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.047..0.059 rows=1 loops=1)
+   Recheck Cond: (token = 'ebfc0273-4056-484b-97ac-d08beac8a361'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = 'ebfc0273-4056-484b-97ac-d08beac8a361'::uuid)
+ Planning Time: 0.238 ms
+ Execution Time: 0.521 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.045..0.058 rows=1 loops=1)
+   Recheck Cond: (token = 'b5689910-24fd-4c90-b394-6859351c83d3'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = 'b5689910-24fd-4c90-b394-6859351c83d3'::uuid)
+ Planning Time: 0.238 ms
+ Execution Time: 0.531 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.046..0.058 rows=1 loops=1)
+   Recheck Cond: (token = '4577adb3-a981-46b3-a953-33887ff2d8d6'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.025..0.031 rows=1 loops=1)
+         Index Cond: (token = '4577adb3-a981-46b3-a953-33887ff2d8d6'::uuid)
+ Planning Time: 0.239 ms
+ Execution Time: 0.534 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.047..0.059 rows=1 loops=1)
+   Recheck Cond: (token = '0ee34451-8d29-4af7-853a-cc56ca45b949'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.028..0.034 rows=1 loops=1)
+         Index Cond: (token = '0ee34451-8d29-4af7-853a-cc56ca45b949'::uuid)
+ Planning Time: 0.246 ms
+ Execution Time: 0.533 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.049..0.061 rows=1 loops=1)
+   Recheck Cond: (token = 'd84fdbee-71d0-4e3c-a122-6425159999bb'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.028..0.034 rows=1 loops=1)
+         Index Cond: (token = 'd84fdbee-71d0-4e3c-a122-6425159999bb'::uuid)
+ Planning Time: 0.425 ms
+ Execution Time: 0.535 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.046..0.058 rows=1 loops=1)
+   Recheck Cond: (token = 'a1bb728b-5577-4381-8d09-fdf360ed792d'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = 'a1bb728b-5577-4381-8d09-fdf360ed792d'::uuid)
+ Planning Time: 0.237 ms
+ Execution Time: 0.531 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.052..0.065 rows=1 loops=1)
+   Recheck Cond: (token = '6b270928-391f-47c6-a9f0-95c1ab415a9f'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.030..0.036 rows=1 loops=1)
+         Index Cond: (token = '6b270928-391f-47c6-a9f0-95c1ab415a9f'::uuid)
+ Planning Time: 0.238 ms
+ Execution Time: 0.545 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.045..0.057 rows=1 loops=1)
+   Recheck Cond: (token = '3593a0c5-1dc6-4c0a-85d8-2d8ff6953a12'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = '3593a0c5-1dc6-4c0a-85d8-2d8ff6953a12'::uuid)
+ Planning Time: 0.240 ms
+ Execution Time: 0.518 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.050..0.062 rows=1 loops=1)
+   Recheck Cond: (token = 'fe003762-026e-404f-a1bf-c65d41e91b84'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.029..0.035 rows=1 loops=1)
+         Index Cond: (token = 'fe003762-026e-404f-a1bf-c65d41e91b84'::uuid)
+ Planning Time: 0.238 ms
+ Execution Time: 0.529 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.049..0.062 rows=1 loops=1)
+   Recheck Cond: (token = '8e0e4c06-87f1-4a72-887e-918c8abf7087'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.028..0.034 rows=1 loops=1)
+         Index Cond: (token = '8e0e4c06-87f1-4a72-887e-918c8abf7087'::uuid)
+ Planning Time: 0.233 ms
+ Execution Time: 0.534 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.045..0.057 rows=1 loops=1)
+   Recheck Cond: (token = '577ae3a3-6b99-4eb7-a466-2a5ad51350fa'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.025..0.031 rows=1 loops=1)
+         Index Cond: (token = '577ae3a3-6b99-4eb7-a466-2a5ad51350fa'::uuid)
+ Planning Time: 0.234 ms
+ Execution Time: 0.645 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.047..0.059 rows=1 loops=1)
+   Recheck Cond: (token = '21e77940-4f40-43fb-804d-c2282067306c'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.028..0.034 rows=1 loops=1)
+         Index Cond: (token = '21e77940-4f40-43fb-804d-c2282067306c'::uuid)
+ Planning Time: 0.241 ms
+ Execution Time: 0.526 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.044..0.056 rows=1 loops=1)
+   Recheck Cond: (token = 'eb5310dd-33e7-4740-ac34-5bf76bbb11de'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.024..0.030 rows=1 loops=1)
+         Index Cond: (token = 'eb5310dd-33e7-4740-ac34-5bf76bbb11de'::uuid)
+ Planning Time: 0.238 ms
+ Execution Time: 0.535 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.046..0.058 rows=1 loops=1)
+   Recheck Cond: (token = 'b4bfa77a-178f-4b85-881c-f3c5b60ef150'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = 'b4bfa77a-178f-4b85-881c-f3c5b60ef150'::uuid)
+ Planning Time: 0.237 ms
+ Execution Time: 0.522 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.044..0.056 rows=1 loops=1)
+   Recheck Cond: (token = '7e2b3e17-fb36-40ca-a403-8b930162d2c2'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.024..0.029 rows=1 loops=1)
+         Index Cond: (token = '7e2b3e17-fb36-40ca-a403-8b930162d2c2'::uuid)
+ Planning Time: 0.236 ms
+ Execution Time: 0.521 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.046..0.058 rows=1 loops=1)
+   Recheck Cond: (token = '4797d5b5-dfde-440e-80ea-24614cb6b235'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.028..0.034 rows=1 loops=1)
+         Index Cond: (token = '4797d5b5-dfde-440e-80ea-24614cb6b235'::uuid)
+ Planning Time: 0.239 ms
+ Execution Time: 0.531 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.049..0.060 rows=1 loops=1)
+   Recheck Cond: (token = '11036c52-c385-4953-acd2-bc30970a92a7'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.028..0.034 rows=1 loops=1)
+         Index Cond: (token = '11036c52-c385-4953-acd2-bc30970a92a7'::uuid)
+ Planning Time: 0.235 ms
+ Execution Time: 0.537 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.046..0.058 rows=1 loops=1)
+   Recheck Cond: (token = 'a11281f5-4909-4276-9291-885ee0e0e7aa'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.027..0.033 rows=1 loops=1)
+         Index Cond: (token = 'a11281f5-4909-4276-9291-885ee0e0e7aa'::uuid)
+ Planning Time: 0.242 ms
+ Execution Time: 0.537 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.043..0.054 rows=1 loops=1)
+   Recheck Cond: (token = '6a7e1892-2db0-47bb-be78-202c2b34c81d'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.022..0.028 rows=1 loops=1)
+         Index Cond: (token = '6a7e1892-2db0-47bb-be78-202c2b34c81d'::uuid)
+ Planning Time: 0.238 ms
+ Execution Time: 0.525 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.046..0.058 rows=1 loops=1)
+   Recheck Cond: (token = '34eaaf30-1158-4bff-9a60-b8fb7688a88f'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.028..0.033 rows=1 loops=1)
+         Index Cond: (token = '34eaaf30-1158-4bff-9a60-b8fb7688a88f'::uuid)
+ Planning Time: 0.238 ms
+ Execution Time: 0.552 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.049..0.061 rows=1 loops=1)
+   Recheck Cond: (token = 'fd5646cd-f5ff-4044-b647-51c9c1dc8901'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.028..0.034 rows=1 loops=1)
+         Index Cond: (token = 'fd5646cd-f5ff-4044-b647-51c9c1dc8901'::uuid)
+ Planning Time: 0.235 ms
+ Execution Time: 0.532 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.046..0.058 rows=1 loops=1)
+   Recheck Cond: (token = 'c7c2dc6a-d9a6-4489-922e-e9970c306973'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.028..0.033 rows=1 loops=1)
+         Index Cond: (token = 'c7c2dc6a-d9a6-4489-922e-e9970c306973'::uuid)
+ Planning Time: 0.238 ms
+ Execution Time: 0.522 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.048..0.060 rows=1 loops=1)
+   Recheck Cond: (token = '902f7307-bd4e-48ce-be16-8265578449e6'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = '902f7307-bd4e-48ce-be16-8265578449e6'::uuid)
+ Planning Time: 0.246 ms
+ Execution Time: 0.544 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.047..0.059 rows=1 loops=1)
+   Recheck Cond: (token = '5a9b0aa4-a1f5-4d13-9afd-1a33a2d72a58'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.027..0.033 rows=1 loops=1)
+         Index Cond: (token = '5a9b0aa4-a1f5-4d13-9afd-1a33a2d72a58'::uuid)
+ Planning Time: 0.253 ms
+ Execution Time: 0.583 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.046..0.058 rows=1 loops=1)
+   Recheck Cond: (token = 'eaa91f48-2679-4735-b0bc-e662ebad7f5b'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.024..0.030 rows=1 loops=1)
+         Index Cond: (token = 'eaa91f48-2679-4735-b0bc-e662ebad7f5b'::uuid)
+ Planning Time: 0.249 ms
+ Execution Time: 0.561 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.049..0.060 rows=1 loops=1)
+   Recheck Cond: (token = 'b316b6e5-0a20-4b7a-ada3-7e3036015fcd'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.029..0.035 rows=1 loops=1)
+         Index Cond: (token = 'b316b6e5-0a20-4b7a-ada3-7e3036015fcd'::uuid)
+ Planning Time: 0.252 ms
+ Execution Time: 0.561 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.048..0.060 rows=1 loops=1)
+   Recheck Cond: (token = '7d824d82-efc8-4fbf-898b-16ff81554040'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = '7d824d82-efc8-4fbf-898b-16ff81554040'::uuid)
+ Planning Time: 0.238 ms
+ Execution Time: 0.536 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.048..0.060 rows=1 loops=1)
+   Recheck Cond: (token = '47eee41f-d36f-4404-a572-afcdcca920b2'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.028..0.033 rows=1 loops=1)
+         Index Cond: (token = '47eee41f-d36f-4404-a572-afcdcca920b2'::uuid)
+ Planning Time: 0.237 ms
+ Execution Time: 0.550 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.050..0.062 rows=1 loops=1)
+   Recheck Cond: (token = '105a7bbc-b717-4848-8159-479b17fd0024'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.029..0.035 rows=1 loops=1)
+         Index Cond: (token = '105a7bbc-b717-4848-8159-479b17fd0024'::uuid)
+ Planning Time: 0.625 ms
+ Execution Time: 0.541 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.048..0.060 rows=1 loops=1)
+   Recheck Cond: (token = 'dac61259-9bbe-4d8d-ad41-e0696251e196'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.024..0.031 rows=1 loops=1)
+         Index Cond: (token = 'dac61259-9bbe-4d8d-ad41-e0696251e196'::uuid)
+ Planning Time: 0.241 ms
+ Execution Time: 0.531 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.045..0.056 rows=1 loops=1)
+   Recheck Cond: (token = 'a332a8f6-7f65-41d2-8928-7837ada5c109'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.024..0.029 rows=1 loops=1)
+         Index Cond: (token = 'a332a8f6-7f65-41d2-8928-7837ada5c109'::uuid)
+ Planning Time: 0.268 ms
+ Execution Time: 0.512 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.045..0.057 rows=1 loops=1)
+   Recheck Cond: (token = '3341bd9a-04e9-4bf4-afe7-4466f67b160c'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.031 rows=1 loops=1)
+         Index Cond: (token = '3341bd9a-04e9-4bf4-afe7-4466f67b160c'::uuid)
+ Planning Time: 0.239 ms
+ Execution Time: 0.528 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.050..0.061 rows=1 loops=1)
+   Recheck Cond: (token = 'fdad5437-e890-4f39-8bcf-dc3441cff77e'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.029..0.034 rows=1 loops=1)
+         Index Cond: (token = 'fdad5437-e890-4f39-8bcf-dc3441cff77e'::uuid)
+ Planning Time: 0.230 ms
+ Execution Time: 0.532 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.046..0.058 rows=1 loops=1)
+   Recheck Cond: (token = 'c619ebd4-cc38-437e-a7b6-74038c22d7f1'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = 'c619ebd4-cc38-437e-a7b6-74038c22d7f1'::uuid)
+ Planning Time: 0.238 ms
+ Execution Time: 0.528 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.048..0.060 rows=1 loops=1)
+   Recheck Cond: (token = '90858271-b0df-48c3-839d-0dd1d776b763'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.027..0.032 rows=1 loops=1)
+         Index Cond: (token = '90858271-b0df-48c3-839d-0dd1d776b763'::uuid)
+ Planning Time: 0.235 ms
+ Execution Time: 0.533 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.045..0.057 rows=1 loops=1)
+   Recheck Cond: (token = '59f1190f-9487-4c08-af85-a59f22ca98d5'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = '59f1190f-9487-4c08-af85-a59f22ca98d5'::uuid)
+ Planning Time: 0.239 ms
+ Execution Time: 0.529 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.045..0.058 rows=1 loops=1)
+   Recheck Cond: (token = '235eb0ac-782e-414c-8b6c-3d6d6d1e7847'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.025..0.030 rows=1 loops=1)
+         Index Cond: (token = '235eb0ac-782e-414c-8b6c-3d6d6d1e7847'::uuid)
+ Planning Time: 0.237 ms
+ Execution Time: 0.534 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.042..0.054 rows=1 loops=1)
+   Recheck Cond: (token = 'ecca4749-5dd5-4591-a753-d63bb87259ba'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.024..0.030 rows=1 loops=1)
+         Index Cond: (token = 'ecca4749-5dd5-4591-a753-d63bb87259ba'::uuid)
+ Planning Time: 0.249 ms
+ Execution Time: 0.527 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.043..0.055 rows=1 loops=1)
+   Recheck Cond: (token = 'b636dee6-417d-49d6-833b-6e0a03c6392c'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.023..0.029 rows=1 loops=1)
+         Index Cond: (token = 'b636dee6-417d-49d6-833b-6e0a03c6392c'::uuid)
+ Planning Time: 0.242 ms
+ Execution Time: 0.533 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.043..0.055 rows=1 loops=1)
+   Recheck Cond: (token = '4644f28a-c601-43f9-b9fa-3a384c9c8e2f'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.024..0.030 rows=1 loops=1)
+         Index Cond: (token = '4644f28a-c601-43f9-b9fa-3a384c9c8e2f'::uuid)
+ Planning Time: 0.243 ms
+ Execution Time: 0.528 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.052..0.063 rows=1 loops=1)
+   Recheck Cond: (token = '0fb18927-aaa8-483d-95e1-d20697f06ea1'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.028..0.034 rows=1 loops=1)
+         Index Cond: (token = '0fb18927-aaa8-483d-95e1-d20697f06ea1'::uuid)
+ Planning Time: 0.241 ms
+ Execution Time: 0.528 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.047..0.059 rows=1 loops=1)
+   Recheck Cond: (token = 'd91d20c4-8e4f-4c82-b2c9-6bd5e2444f14'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.028..0.034 rows=1 loops=1)
+         Index Cond: (token = 'd91d20c4-8e4f-4c82-b2c9-6bd5e2444f14'::uuid)
+ Planning Time: 0.243 ms
+ Execution Time: 0.536 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.048..0.060 rows=1 loops=1)
+   Recheck Cond: (token = 'a289b761-72f7-40c7-9eb0-03a32d982f86'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.023..0.029 rows=1 loops=1)
+         Index Cond: (token = 'a289b761-72f7-40c7-9eb0-03a32d982f86'::uuid)
+ Planning Time: 0.237 ms
+ Execution Time: 0.532 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.048..0.060 rows=1 loops=1)
+   Recheck Cond: (token = '6cf54efe-569e-450c-ba97-9b7178eb0ff8'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.028..0.034 rows=1 loops=1)
+         Index Cond: (token = '6cf54efe-569e-450c-ba97-9b7178eb0ff8'::uuid)
+ Planning Time: 0.240 ms
+ Execution Time: 0.555 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.047..0.059 rows=1 loops=1)
+   Recheck Cond: (token = '3661e59b-3a46-4950-967f-343fc33ff06a'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = '3661e59b-3a46-4950-967f-343fc33ff06a'::uuid)
+ Planning Time: 0.238 ms
+ Execution Time: 0.534 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.047..0.059 rows=1 loops=1)
+   Recheck Cond: (token = 'ffcd7c38-1eed-4e95-b266-cc0e0e93d0dd'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.028..0.033 rows=1 loops=1)
+         Index Cond: (token = 'ffcd7c38-1eed-4e95-b266-cc0e0e93d0dd'::uuid)
+ Planning Time: 0.236 ms
+ Execution Time: 0.523 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.048..0.061 rows=1 loops=1)
+   Recheck Cond: (token = '8fdc91dc-a471-47b8-9825-983c576925e0'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = '8fdc91dc-a471-47b8-9825-983c576925e0'::uuid)
+ Planning Time: 0.244 ms
+ Execution Time: 0.536 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.045..0.058 rows=1 loops=1)
+   Recheck Cond: (token = '59482779-8818-4cfd-b40d-300aa2bd0652'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.032 rows=1 loops=1)
+         Index Cond: (token = '59482779-8818-4cfd-b40d-300aa2bd0652'::uuid)
+ Planning Time: 0.252 ms
+ Execution Time: 0.694 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.047..0.058 rows=1 loops=1)
+   Recheck Cond: (token = '22b4be16-6cbf-4041-90f4-c9d9ed11e6c5'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.031 rows=1 loops=1)
+         Index Cond: (token = '22b4be16-6cbf-4041-90f4-c9d9ed11e6c5'::uuid)
+ Planning Time: 0.236 ms
+ Execution Time: 0.528 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.046..0.059 rows=1 loops=1)
+   Recheck Cond: (token = '5893c5e1-b96d-4a97-a2c3-c74a2cf3f630'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.026..0.033 rows=1 loops=1)
+         Index Cond: (token = '5893c5e1-b96d-4a97-a2c3-c74a2cf3f630'::uuid)
+ Planning Time: 0.240 ms
+ Execution Time: 0.537 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.046..0.058 rows=1 loops=1)
+   Recheck Cond: (token = '21ff5c7e-9d15-4edc-8fab-60187747d6a2'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.025..0.030 rows=1 loops=1)
+         Index Cond: (token = '21ff5c7e-9d15-4edc-8fab-60187747d6a2'::uuid)
+ Planning Time: 0.238 ms
+ Execution Time: 0.529 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.042..0.054 rows=1 loops=1)
+   Recheck Cond: (token = 'eb6bf31b-81bc-4321-ab92-f8e6c29bb714'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.023..0.029 rows=1 loops=1)
+         Index Cond: (token = 'eb6bf31b-81bc-4321-ab92-f8e6c29bb714'::uuid)
+ Planning Time: 0.240 ms
+ Execution Time: 0.520 ms
+(7 rows)
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on user_login_tokens  (cost=4.54..86.88 rows=50 width=44) (actual time=0.042..0.053 rows=1 loops=1)
+   Recheck Cond: (token = 'b4d78ab8-6563-4766-8779-90b50def9786'::uuid)
+   Heap Blocks: exact=1
+   ->  Bitmap Index Scan on gist_tokenx  (cost=0.00..4.53 rows=50 width=0) (actual time=0.022..0.029 rows=1 loops=1)
+         Index Cond: (token = 'b4d78ab8-6563-4766-8779-90b50def9786'::uuid)
+ Planning Time: 0.233 ms
+ Execution Time: 0.599 ms
+(7 rows)
+
+
+############################################################################################################
+##############################################  INDEX - GIN  ###############################################
+############################################################################################################
+
+
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.031..1.378 rows=1 loops=1)
+   Filter: (token = 'b80d5e66-56b8-4ebc-b074-3cac3450ccde'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.250 ms
+ Execution Time: 1.455 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.019..0.777 rows=1 loops=1)
+   Filter: (token = '8179f503-3b5f-4201-9c5b-d47a7fa4ac50'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.213 ms
+ Execution Time: 0.839 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.024..0.755 rows=1 loops=1)
+   Filter: (token = '11880aa7-c0e3-4c23-b21b-a0a8c87a0154'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.208 ms
+ Execution Time: 0.818 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.032..0.760 rows=1 loops=1)
+   Filter: (token = 'dbf4a144-a48a-4168-9e02-387713cee1c6'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.207 ms
+ Execution Time: 0.823 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.040..0.734 rows=1 loops=1)
+   Filter: (token = 'a46038e1-8832-45ad-bae9-d0455e22c238'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.212 ms
+ Execution Time: 0.799 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.049..0.712 rows=1 loops=1)
+   Filter: (token = '6ecccf7e-6cd9-49f1-96d1-6913a976a2aa'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.197 ms
+ Execution Time: 0.774 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.055..0.712 rows=1 loops=1)
+   Filter: (token = 'fedbe322-f15d-4314-bc90-3442f34cf7ae'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.204 ms
+ Execution Time: 0.773 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.065..0.714 rows=1 loops=1)
+   Filter: (token = 'c7477abf-d504-4859-a877-cd103ea0d820'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.204 ms
+ Execution Time: 0.777 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.072..0.733 rows=1 loops=1)
+   Filter: (token = '57568f62-5b88-417c-8e36-983f87762d23'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.204 ms
+ Execution Time: 0.792 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.077..0.697 rows=1 loops=1)
+   Filter: (token = '21c22600-3f2f-46c0-ab1e-310dd2ca0d96'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.197 ms
+ Execution Time: 0.757 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.082..0.681 rows=1 loops=1)
+   Filter: (token = 'ea2ebd9d-23d7-4a05-8705-c9db1d1ded08'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.196 ms
+ Execution Time: 0.742 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.087..0.681 rows=1 loops=1)
+   Filter: (token = 'b49a543a-077e-4e4a-a3ec-62a96871ce7a'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.191 ms
+ Execution Time: 0.741 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.094..0.683 rows=1 loops=1)
+   Filter: (token = '7d07ebd7-eb26-438f-8fd4-fa77b3c5aeec'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.190 ms
+ Execution Time: 0.742 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.103..0.684 rows=1 loops=1)
+   Filter: (token = '0d15ff7b-70a9-4db1-a593-c6a6fc9b03f0'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.194 ms
+ Execution Time: 0.745 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.107..0.666 rows=1 loops=1)
+   Filter: (token = 'd7819618-5451-41f6-917a-5e7447efe362'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.189 ms
+ Execution Time: 0.724 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.116..0.695 rows=1 loops=1)
+   Filter: (token = 'a0ee2db5-39f8-453b-bd62-f6439243c4d4'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.185 ms
+ Execution Time: 0.751 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.118..0.665 rows=1 loops=1)
+   Filter: (token = '6a5ac452-1d9f-4a80-9949-8f11dd97a447'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.185 ms
+ Execution Time: 0.723 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.121..0.656 rows=1 loops=1)
+   Filter: (token = '33c65bef-0147-4ec4-b530-27df28eb85b9'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.187 ms
+ Execution Time: 0.713 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.127..0.650 rows=1 loops=1)
+   Filter: (token = 'fd32f28c-e5ee-4309-9118-bfad733f652b'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.192 ms
+ Execution Time: 0.706 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.132..0.656 rows=1 loops=1)
+   Filter: (token = 'c79e8929-c996-474e-bdff-587bbe93469d'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.185 ms
+ Execution Time: 0.712 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.143..0.677 rows=1 loops=1)
+   Filter: (token = '56ad9ecd-4e19-4171-93be-23aa07689aa1'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.190 ms
+ Execution Time: 0.746 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.146..0.671 rows=1 loops=1)
+   Filter: (token = '2019356a-32c1-45b5-bfa6-bc7852bc7b13'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.181 ms
+ Execution Time: 0.724 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.149..0.652 rows=1 loops=1)
+   Filter: (token = 'ea85cb07-1668-4afa-9b8d-54469d105b85'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.184 ms
+ Execution Time: 0.708 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.158..0.667 rows=1 loops=1)
+   Filter: (token = 'b3f162a4-fa10-4e3f-b774-ed15e8643cf7'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.182 ms
+ Execution Time: 0.720 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.158..0.637 rows=1 loops=1)
+   Filter: (token = '7d5df941-deb7-4284-935c-85e333b81c6a'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.182 ms
+ Execution Time: 0.693 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.162..0.632 rows=1 loops=1)
+   Filter: (token = '46c990de-c25e-47c8-b043-1db17e0cfcdc'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.171 ms
+ Execution Time: 0.688 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.170..0.635 rows=1 loops=1)
+   Filter: (token = '1036277c-a706-4b0d-9c2a-b67fc960dd4e'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.180 ms
+ Execution Time: 0.687 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.178..0.633 rows=1 loops=1)
+   Filter: (token = 'a0443c1f-2c89-4530-82ea-81ae12363252'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.177 ms
+ Execution Time: 0.688 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.182..0.629 rows=1 loops=1)
+   Filter: (token = '69b0d3bc-1031-4975-aed1-1a7c5d8a12c4'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.178 ms
+ Execution Time: 0.682 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.200..0.673 rows=1 loops=1)
+   Filter: (token = '331c6a59-f4d8-4eb9-8ab8-b24aa8def336'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.181 ms
+ Execution Time: 0.729 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.198..0.666 rows=1 loops=1)
+   Filter: (token = 'fc8901f7-d880-42fe-a6a0-4b19f331d3a8'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.182 ms
+ Execution Time: 0.721 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.198..0.633 rows=1 loops=1)
+   Filter: (token = 'c6f59894-bc27-4643-8287-e3e73e85b31b'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.178 ms
+ Execution Time: 0.688 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.206..0.634 rows=1 loops=1)
+   Filter: (token = '8f612e31-a0ce-4b88-ae6e-7bb589d9948d'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.182 ms
+ Execution Time: 0.689 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.212..0.638 rows=1 loops=1)
+   Filter: (token = '59cdc5ce-8476-4fcd-8a56-1483d42d74ff'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.177 ms
+ Execution Time: 0.694 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.224..0.647 rows=1 loops=1)
+   Filter: (token = '23395c6b-681d-4411-a63d-ac521f815571'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.183 ms
+ Execution Time: 0.702 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.232..0.661 rows=1 loops=1)
+   Filter: (token = 'b248710f-eea1-4d34-8cfc-78806857aa75'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.173 ms
+ Execution Time: 0.716 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.229..0.633 rows=1 loops=1)
+   Filter: (token = '7cb408ac-d248-4279-a8e4-104eb3ab8ae7'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.177 ms
+ Execution Time: 0.687 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.245..0.661 rows=1 loops=1)
+   Filter: (token = '45209f49-b6f0-46be-84cb-a81dfeff6a59'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.176 ms
+ Execution Time: 0.713 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.241..0.635 rows=1 loops=1)
+   Filter: (token = '0f8c36e6-9a97-4b02-a0b2-41eb49534bcb'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.182 ms
+ Execution Time: 0.689 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.261..0.663 rows=1 loops=1)
+   Filter: (token = 'd9f8cd83-7e3f-4f47-9c9a-d9b994a72b3e'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.176 ms
+ Execution Time: 0.716 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.255..0.635 rows=1 loops=1)
+   Filter: (token = 'a2646420-62e6-438c-b881-7287dffa0cb0'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.178 ms
+ Execution Time: 0.687 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.258..0.632 rows=1 loops=1)
+   Filter: (token = '6cd1fbbd-468d-48d1-9568-0a552a4eec22'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.178 ms
+ Execution Time: 0.686 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.267..0.636 rows=1 loops=1)
+   Filter: (token = 'fcdf0f61-cb11-42f3-bb28-d68474244126'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.176 ms
+ Execution Time: 0.690 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.276..0.646 rows=1 loops=1)
+   Filter: (token = 'c54ba6fe-afb8-4638-970f-6e52be782198'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.177 ms
+ Execution Time: 0.702 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.278..0.635 rows=1 loops=1)
+   Filter: (token = '8fb83d9b-9460-4a7d-b3f6-062109cc020a'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.173 ms
+ Execution Time: 0.690 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.287..0.633 rows=1 loops=1)
+   Filter: (token = '5824d438-7807-4fc2-9fde-9fef5420e27c'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.174 ms
+ Execution Time: 0.687 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.306..0.664 rows=1 loops=1)
+   Filter: (token = '22906bd6-5caf-4306-bbc5-37bd9f74c3ee'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.182 ms
+ Execution Time: 0.717 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.334..0.672 rows=1 loops=1)
+   Filter: (token = 'ebfc0273-4056-484b-97ac-d08beac8a361'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.177 ms
+ Execution Time: 0.726 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.303..0.636 rows=1 loops=1)
+   Filter: (token = 'b5689910-24fd-4c90-b394-6859351c83d3'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.181 ms
+ Execution Time: 0.690 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.306..0.634 rows=1 loops=1)
+   Filter: (token = '4577adb3-a981-46b3-a953-33887ff2d8d6'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.177 ms
+ Execution Time: 0.687 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.312..0.634 rows=1 loops=1)
+   Filter: (token = '0ee34451-8d29-4af7-853a-cc56ca45b949'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.178 ms
+ Execution Time: 0.689 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.332..0.662 rows=1 loops=1)
+   Filter: (token = 'd84fdbee-71d0-4e3c-a122-6425159999bb'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.177 ms
+ Execution Time: 0.715 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.340..0.664 rows=1 loops=1)
+   Filter: (token = 'a1bb728b-5577-4381-8d09-fdf360ed792d'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.177 ms
+ Execution Time: 0.720 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.333..0.633 rows=1 loops=1)
+   Filter: (token = '6b270928-391f-47c6-a9f0-95c1ab415a9f'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.174 ms
+ Execution Time: 0.685 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.341..0.638 rows=1 loops=1)
+   Filter: (token = '3593a0c5-1dc6-4c0a-85d8-2d8ff6953a12'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.182 ms
+ Execution Time: 0.692 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.494..0.785 rows=1 loops=1)
+   Filter: (token = 'fe003762-026e-404f-a1bf-c65d41e91b84'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.175 ms
+ Execution Time: 0.841 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.350..0.632 rows=1 loops=1)
+   Filter: (token = '8e0e4c06-87f1-4a72-887e-918c8abf7087'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.178 ms
+ Execution Time: 0.685 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.357..0.635 rows=1 loops=1)
+   Filter: (token = '577ae3a3-6b99-4eb7-a466-2a5ad51350fa'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.177 ms
+ Execution Time: 0.688 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.370..0.648 rows=1 loops=1)
+   Filter: (token = '21e77940-4f40-43fb-804d-c2282067306c'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.181 ms
+ Execution Time: 0.704 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.377..0.646 rows=1 loops=1)
+   Filter: (token = 'eb5310dd-33e7-4740-ac34-5bf76bbb11de'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.182 ms
+ Execution Time: 0.700 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.379..0.640 rows=1 loops=1)
+   Filter: (token = 'b4bfa77a-178f-4b85-881c-f3c5b60ef150'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.177 ms
+ Execution Time: 0.693 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.385..0.638 rows=1 loops=1)
+   Filter: (token = '7e2b3e17-fb36-40ca-a403-8b930162d2c2'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.177 ms
+ Execution Time: 0.691 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.394..0.647 rows=1 loops=1)
+   Filter: (token = '4797d5b5-dfde-440e-80ea-24614cb6b235'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.185 ms
+ Execution Time: 0.702 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.392..0.635 rows=1 loops=1)
+   Filter: (token = '11036c52-c385-4953-acd2-bc30970a92a7'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.177 ms
+ Execution Time: 0.688 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.417..0.662 rows=1 loops=1)
+   Filter: (token = 'a11281f5-4909-4276-9291-885ee0e0e7aa'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.180 ms
+ Execution Time: 0.717 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.404..0.635 rows=1 loops=1)
+   Filter: (token = '6a7e1892-2db0-47bb-be78-202c2b34c81d'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.178 ms
+ Execution Time: 0.690 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.489..0.885 rows=1 loops=1)
+   Filter: (token = '34eaaf30-1158-4bff-9a60-b8fb7688a88f'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.180 ms
+ Execution Time: 0.971 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.415..0.633 rows=1 loops=1)
+   Filter: (token = 'fd5646cd-f5ff-4044-b647-51c9c1dc8901'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.175 ms
+ Execution Time: 0.687 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.571..0.782 rows=1 loops=1)
+   Filter: (token = 'c7c2dc6a-d9a6-4489-922e-e9970c306973'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.175 ms
+ Execution Time: 0.837 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.433..0.638 rows=1 loops=1)
+   Filter: (token = '902f7307-bd4e-48ce-be16-8265578449e6'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.172 ms
+ Execution Time: 0.693 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.437..0.637 rows=1 loops=1)
+   Filter: (token = '5a9b0aa4-a1f5-4d13-9afd-1a33a2d72a58'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.178 ms
+ Execution Time: 0.692 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.520..0.747 rows=1 loops=1)
+   Filter: (token = 'eaa91f48-2679-4735-b0bc-e662ebad7f5b'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.257 ms
+ Execution Time: 0.817 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.487..0.686 rows=1 loops=1)
+   Filter: (token = 'b316b6e5-0a20-4b7a-ada3-7e3036015fcd'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.191 ms
+ Execution Time: 0.742 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.457..0.636 rows=1 loops=1)
+   Filter: (token = '7d824d82-efc8-4fbf-898b-16ff81554040'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.194 ms
+ Execution Time: 0.691 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.483..0.664 rows=1 loops=1)
+   Filter: (token = '47eee41f-d36f-4404-a572-afcdcca920b2'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.178 ms
+ Execution Time: 0.719 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.478..0.661 rows=1 loops=1)
+   Filter: (token = '105a7bbc-b717-4848-8159-479b17fd0024'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.177 ms
+ Execution Time: 0.716 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.492..0.660 rows=1 loops=1)
+   Filter: (token = 'dac61259-9bbe-4d8d-ad41-e0696251e196'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.179 ms
+ Execution Time: 0.712 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.479..0.636 rows=1 loops=1)
+   Filter: (token = 'a332a8f6-7f65-41d2-8928-7837ada5c109'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.174 ms
+ Execution Time: 0.692 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.503..0.660 rows=1 loops=1)
+   Filter: (token = '3341bd9a-04e9-4bf4-afe7-4466f67b160c'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.183 ms
+ Execution Time: 0.713 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.488..0.632 rows=1 loops=1)
+   Filter: (token = 'fdad5437-e890-4f39-8bcf-dc3441cff77e'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.173 ms
+ Execution Time: 0.686 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.587..0.724 rows=1 loops=1)
+   Filter: (token = 'c619ebd4-cc38-437e-a7b6-74038c22d7f1'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.177 ms
+ Execution Time: 0.779 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.504..0.637 rows=1 loops=1)
+   Filter: (token = '90858271-b0df-48c3-839d-0dd1d776b763'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.196 ms
+ Execution Time: 0.690 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.536..0.667 rows=1 loops=1)
+   Filter: (token = '59f1190f-9487-4c08-af85-a59f22ca98d5'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.181 ms
+ Execution Time: 0.721 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.514..0.632 rows=1 loops=1)
+   Filter: (token = '235eb0ac-782e-414c-8b6c-3d6d6d1e7847'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.173 ms
+ Execution Time: 0.684 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.532..0.649 rows=1 loops=1)
+   Filter: (token = 'ecca4749-5dd5-4591-a753-d63bb87259ba'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.181 ms
+ Execution Time: 0.706 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.552..0.665 rows=1 loops=1)
+   Filter: (token = 'b636dee6-417d-49d6-833b-6e0a03c6392c'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.178 ms
+ Execution Time: 0.718 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.701..0.800 rows=1 loops=1)
+   Filter: (token = '4644f28a-c601-43f9-b9fa-3a384c9c8e2f'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.179 ms
+ Execution Time: 0.855 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.562..0.658 rows=1 loops=1)
+   Filter: (token = '0fb18927-aaa8-483d-95e1-d20697f06ea1'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.174 ms
+ Execution Time: 0.712 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.547..0.635 rows=1 loops=1)
+   Filter: (token = 'd91d20c4-8e4f-4c82-b2c9-6bd5e2444f14'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.178 ms
+ Execution Time: 0.690 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.555..0.636 rows=1 loops=1)
+   Filter: (token = 'a289b761-72f7-40c7-9eb0-03a32d982f86'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.233 ms
+ Execution Time: 0.690 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.559..0.634 rows=1 loops=1)
+   Filter: (token = '6cf54efe-569e-450c-ba97-9b7178eb0ff8'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.181 ms
+ Execution Time: 0.690 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.563..0.634 rows=1 loops=1)
+   Filter: (token = '3661e59b-3a46-4950-967f-343fc33ff06a'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.177 ms
+ Execution Time: 0.688 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.810..0.890 rows=1 loops=1)
+   Filter: (token = 'ffcd7c38-1eed-4e95-b266-cc0e0e93d0dd'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.179 ms
+ Execution Time: 0.942 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.573..0.631 rows=1 loops=1)
+   Filter: (token = '8fdc91dc-a471-47b8-9825-983c576925e0'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.176 ms
+ Execution Time: 0.686 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.584..0.635 rows=1 loops=1)
+   Filter: (token = '59482779-8818-4cfd-b40d-300aa2bd0652'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.178 ms
+ Execution Time: 0.690 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.588..0.635 rows=1 loops=1)
+   Filter: (token = '22b4be16-6cbf-4041-90f4-c9d9ed11e6c5'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.176 ms
+ Execution Time: 0.690 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.620..0.661 rows=1 loops=1)
+   Filter: (token = '5893c5e1-b96d-4a97-a2c3-c74a2cf3f630'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.208 ms
+ Execution Time: 0.714 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.599..0.633 rows=1 loops=1)
+   Filter: (token = '21ff5c7e-9d15-4edc-8fab-60187747d6a2'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.180 ms
+ Execution Time: 0.686 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.635..0.659 rows=1 loops=1)
+   Filter: (token = 'eb6bf31b-81bc-4321-ab92-f8e6c29bb714'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.180 ms
+ Execution Time: 0.712 ms
+(5 rows)
+                                                  QUERY PLAN                                                   
+---------------------------------------------------------------------------------------------------------------
+ Seq Scan on user_login_tokens  (cost=0.00..226.78 rows=53 width=44) (actual time=0.627..0.646 rows=1 loops=1)
+   Filter: (token = 'b4d78ab8-6563-4766-8779-90b50def9786'::uuid)
+   Rows Removed by Filter: 9999
+ Planning Time: 0.178 ms
+ Execution Time: 0.700 ms
+(5 rows)
